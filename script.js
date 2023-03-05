@@ -2,8 +2,7 @@ let userName = prompt('What is your name?');
 let userSurname = prompt('What is your surname?');
 let userAge = prompt('How old are you?');
 let userCity = prompt('What city do you live in?');
-
-let personAge = +userAge;
+userAge = +userAge;
 
 let user = {
     name: `${userName}`,
