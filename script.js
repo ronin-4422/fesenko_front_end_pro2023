@@ -5,7 +5,6 @@ let userCity = prompt('What city do you live in?');
 
 let personAge = +userAge;
 
-
 let user = {
     name: `${userName}`,
     surname: `${userSurname}`,
