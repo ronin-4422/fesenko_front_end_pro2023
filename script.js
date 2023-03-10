@@ -47,13 +47,12 @@ getFourthUserNumber;
 
 const multiplyResult = multiplyUserNumbers;
 
-if (multiplyResult / 2 && multiplyResult != 0) {
+if (multiplyResult / 2 && multiplyResult !== 0) {
     console.log('Your homework is done, dude!');
-}
-
-if (getSecondUserNumber > 50) {
+} else  if (getSecondUserNumber > 50){
     alert(getSecondUserNumber)
 }
+
 console.log(parseInt(getFirstUserNumber));
 console.log(parseInt(getSecondUserNumber));
 console.log(parseInt(getThirdUserNumber));
