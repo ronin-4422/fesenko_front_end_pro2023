@@ -1,5 +1,5 @@
 let getFirstUserNumber = prompt('Write a number:',100); // || 0
-let getSecondUserNumber = prompt('Write a number:',50); // || 22
+let getSecondUserNumber = prompt('Write a number:',60); // || 22
 let getThirdUserNumber;
 let getFourthUserNumber;
 
@@ -47,9 +47,11 @@ getFourthUserNumber;
 
 const multiplyResult = multiplyUserNumbers;
 
-if (multiplyresult / 2 && multiplyresult != 0) {
+if (multiplyResult / 2 && multiplyResult != 0) {
     console.log('Your homework is done, dude!');
-} else if (getSecondUserNumber > 50 ) {
+}
+
+if (getSecondUserNumber > 50) {
     alert(getSecondUserNumber)
 }
 console.log(parseInt(getFirstUserNumber));
@@ -57,4 +59,4 @@ console.log(parseInt(getSecondUserNumber));
 console.log(parseInt(getThirdUserNumber));
 console.log(object);
 console.log(parseInt(getFourthUserNumber));
-console.log(multiplyresult);
+console.log(multiplyResult);
