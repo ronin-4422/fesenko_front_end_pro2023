@@ -27,7 +27,7 @@ if (getFirstUserNumber >= 90) {
     object.size = 'medium'
 }
 
-switch(object.size) {
+switch (object.size) {
     case 'big':
         getFourthUserNumber = 1000;
         break;
@@ -45,9 +45,9 @@ getSecondUserNumber *
 getThirdUserNumber * 
 getFourthUserNumber;
 
-const result = multiplyUserNumbers;
+const multiplyResult = multiplyUserNumbers;
 
-if (result / 2 != 0) {
+if (multiplyresult / 2 && multiplyresult != 0) {
     console.log('Your homework is done, dude!');
 } else if (getSecondUserNumber > 50 ) {
     alert(getSecondUserNumber)
@@ -57,4 +57,4 @@ console.log(parseInt(getSecondUserNumber));
 console.log(parseInt(getThirdUserNumber));
 console.log(object);
 console.log(parseInt(getFourthUserNumber));
-console.log(result);
+console.log(multiplyresult);
