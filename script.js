@@ -17,7 +17,7 @@ if (getFirstUserNumber && getSecondUserNumber) {
     getThirdUserNumber = 40
 }
 
-let object = {};
+const object = {};
 
 if (getFirstUserNumber >= 90) {
     object.size = 'big'
