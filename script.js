@@ -74,7 +74,7 @@ for (let i = 2; i < seventhOutput; i++) {
       break;
     }
   }
-  
+
   console.log('----------------------7');
   if (isPrime) {
     console.log(seventhOutput + " является простым числом");
