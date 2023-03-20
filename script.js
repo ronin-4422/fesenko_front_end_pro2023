@@ -61,9 +61,9 @@ let users = [
     return user.phone;
   });
   
-  const totalBalance = users.reduce(function(acc, user) {
+  const totalBalance = users.reduce(function(accum, user) {
     const balance = parseInt(user.balance.replace("$", "").replace(",", ""));
-    return acc + balance;
+    return accum + balance;
   }, 0);
   
   console.log('Масив телефонних номерів користувачів, у яких баланс більше 2000 доларів:', phoneNumbers);
