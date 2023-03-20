@@ -1,123 +1,71 @@
-//1. Знайти суму та кількість позитивних елементів.
-const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47] 
-
-let sumPositive = 0;
-let countPositive = 0;
-
-for (let i = 0; i < array.length; i++) {
-  if (array[i] > 0) {
-    sumPositive += array[i];
-    countPositive++;
+let users = [
+  {
+  "index": 0,
+  "isActive": true,
+  "balance": "$2,226.60",
+  "name": "Eugenia Sawyer",
+  "gender": "female",
+  "phone": "+1 (840) 583-3207",
+  "address": "949 John Street, Rose, Puerto Rico, 1857"
+  },
+  {
+  "index": 1,
+  "isActive": true,
+  "balance": "$2,613.77",
+  "name": "Pauline Gallegos",
+  "gender": "female",
+  "phone": "+1 (985) 593-3328",
+  "address": "328 Greenpoint Avenue, Torboy, North Dakota, 6857"
+  },
+  {
+  "index": 2,
+  "isActive": false,
+  "balance": "$3,976.41",
+  "name": "Middleton Chaney",
+  "gender": "male",
+  "phone": "+1 (995) 591-2478",
+  "address": "807 Fleet Walk, Brutus, Arkansas, 9783"
+  },
+  {
+  "index": 3,
+  "isActive": true,
+  "balance": "$1,934.58",
+  "name": "Burns Poole",
+  "gender": "male",
+  "phone": "+1 (885) 559-3422",
+  "address": "730 Seba Avenue, Osage, Alabama, 6290"
+  },
+  {
+  "index": 4,
+  "isActive": true,
+  "balance": "$3,261.65",
+  "name": "Mcfadden Horne",
+  "gender": "male",
+  "phone": "+1 (942) 565-3988",
+  "address": "120 Scholes Street, Kirk, Michigan, 1018"
+  },
+  {
+  "index": 5,
+  "isActive": false,
+  "balance": "$1,790.56",
+  "name": "Suzette Lewis",
+  "gender": "female",
+  "phone": "+1 (837) 586-3283",
+  "address": "314 Dunne Place, Bawcomville, Guam, 9053"
   }
-}
+  ]
 
-console.log('------------------1');
-console.log('Сума позитивних елементів:', sumPositive);
-console.log('Кількість позитивних елементів:', countPositive);
-
-//2. Знайти мінімальний елемент масиву та його порядковий номер.
-let min = array[0];
-let minIndex = 0;
-
-for (let i = 1; i < array.length; i++) {
-  if (array[i] < min) {
-    min = array[i]
-    minIndex = i
-  }
-}
-
-console.log('------------------2');
-console.log("Мінімальний елемент:", min);
-console.log("Його порядковий номер:", minIndex);
-
-//3. Знайти максимальний елемент масиву та його порядковий номер.
-let max = array[0];
-let maxIndex = 0;
-
-for (let i = 1; i < array.length; i++) {
-  if (array[i] > max) {
-    max = array[i]
-    maxIndex = i
-  }
-}
-
-console.log('------------------3');
-console.log("Максімальний елемент:", max);
-console.log("Його порядковий номер:", maxIndex);
-
-//4. Визначити кількість негативних елементів.
-let negativeCount = 0;
-for (let i = 0; i < array.length; i++) {
-  if (array[i] < 0) {
-    negativeCount++;
-  }
-}
-
-console.log('------------------4');
-console.log("Кількість негативних елементів:", negativeCount);
-
-//5. Знайти кількість непарних позитивних елементів.
-let oddPositiveCount = 0;
-for (let i = 0; i < array.length; i++) {
-  if (array[i] > 0 && array[i] % 2 !== 0) {
-    oddPositiveCount++;
-  }
-}
-
-console.log('------------------5');
-console.log("Кількість непарних позитивних елементів:", oddPositiveCount);
-
-//6. Знайти кількість парних позитивних елементів.
-let sumEvenPositive = 0;
-
-for (let i = 0; i < array.length; i++) {
-  if (array[i] > 0 && array[i] % 2 !== 0) {
-    sumEvenPositive++;
-  }
-}
-console.log('------------------6');
-console.log("Кількість парних позитивних елементів: " + sumEvenPositive);
-
-//7. Знайти суму парних позитивних елементів.
-for (let i = 0; i < array.length; i++) {
-  if (array[i] > 0 && array[i] % 2 === 0) {
-    sumEvenPositive += array[i];
-  }
-}
-
-console.log('------------------7');
-console.log("Сума парних позитивних елементів: " + sumEvenPositive);
-
-//8. Знайти суму непарних позитивних елементів.
-let sumOddPositive = 0;
-for (let i = 0; i < array.length; i++) {
-  if (array[i] > 0 && array[i] % 2 !== 0) {
-    sumOddPositive += array[i];
-  }
-}
-
-console.log('------------------8');
-console.log("Сума непарних позитивних елементів: " + sumOddPositive);
-
-//9. Знайти добуток позитивних елементів.
-let arrayPositive = 1;
-for (let i = 0; i < array.length; i++) {
-  if (array[i] > 0) {
-    arrayPositive *= array[i];
-  }
-}
-
-console.log('------------------9');
-console.log("Добуток позитивних елементів: " + arrayPositive);
-
-//10. Знайти найбільший серед елементів масиву, остальні обнулити.
-for (let i = 0; i < array.length; i++) {
-  if (array[i] !== max) {
-    array[i] = 0;
-  }
-}
-
-console.log('------------------10');
-console.log("Масив з обнуленими елементами, крім максимального: " + array);
-
+  const phoneNumbers = users.filter(function(user) {
+    return parseInt(user.balance.replace("$", "").replace(",", "")) > 2000;
+  }).map(function(user) {
+    return user.phone;
+  });
+  
+  const totalBalance = users.reduce(function(acc, user) {
+    const balance = parseInt(user.balance.replace("$", "").replace(",", ""));
+    return acc + balance;
+  }, 0);
+  
+  console.log('Масив телефонних номерів користувачів, у яких баланс більше 2000 доларів:', phoneNumbers);
+  console.log('Cума всіх балансів користувачів:', totalBalance);
 
